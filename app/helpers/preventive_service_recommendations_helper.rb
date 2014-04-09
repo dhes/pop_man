@@ -1,0 +1,2 @@
+module PreventiveServiceRecommendationsHelper
+end

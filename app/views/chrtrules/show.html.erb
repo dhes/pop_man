@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @chrtrule.name %>
+</p>
+
+<p>
+  <strong>Rulecomment:</strong>
+  <%= @chrtrule.rulecomment %>
+</p>
+
+<%= link_to 'Edit', edit_chrtrule_path(@chrtrule) %> |
+<%= link_to 'Back', chrtrules_path %>

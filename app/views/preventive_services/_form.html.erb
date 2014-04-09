@@ -1,0 +1,37 @@
+<%= form_for(@preventive_service) do |f| %>
+  <% if @preventive_service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@preventive_service.errors.count, "error") %> prohibited this preventive_service from being saved:</h2>
+
+      <ul>
+      <% @preventive_service.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :rule %><br>
+    <%= f.text_area :rule %>
+  </div>
+  <div class="field">
+    <%= f.label :in_scope %><br>
+    <%= f.check_box :in_scope %>
+  </div>
+  <div class="field">
+    <%= f.label :implemented %><br>
+    <%= f.check_box :implemented %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

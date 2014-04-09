@@ -1,0 +1,33 @@
+<h1>Listing hes_patients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Last seen</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hes_patients.each do |hes_patient| %>
+      <tr>
+        <td><%= hes_patient.name %></td>
+        <td><%= hes_patient.age %></td>
+        <td><%= hes_patient.gender %></td>
+        <td><%= hes_patient.last_seen %></td>
+        <td><%= link_to 'Show', hes_patient %></td>
+        <td><%= link_to 'Edit', edit_hes_patient_path(hes_patient) %></td>
+        <td><%= link_to 'Destroy', hes_patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hes patient', new_hes_patient_path %>

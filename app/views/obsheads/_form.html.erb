@@ -1,0 +1,49 @@
+<%= form_for(@obshead) do |f| %>
+  <% if @obshead.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@obshead.errors.count, "error") %> prohibited this obshead from being saved:</h2>
+
+      <ul>
+      <% @obshead.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hdid %><br>
+    <%= f.number_field :hdid %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :mlcode %><br>
+    <%= f.text_field :mlcode %>
+  </div>
+  <div class="field">
+    <%= f.label :cptcode %><br>
+    <%= f.text_field :cptcode %>
+  </div>
+  <div class="field">
+    <%= f.label :icdcode %><br>
+    <%= f.text_field :icdcode %>
+  </div>
+  <div class="field">
+    <%= f.label :loinccode %><br>
+    <%= f.text_field :loinccode %>
+  </div>
+  <div class="field">
+    <%= f.label :snomedcode %><br>
+    <%= f.text_field :snomedcode %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

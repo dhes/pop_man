@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source: MyString
+  name: MyString
+  rule: MyText
+  in_scope: false
+
+two:
+  source: MyString
+  name: MyString
+  rule: MyText
+  in_scope: false

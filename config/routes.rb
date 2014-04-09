@@ -1,4 +1,22 @@
 PopMan::Application.routes.draw do
+  resources :uspstf_recs
+
+  resources :clinical_rules
+
+  resources :obsheads
+
+  resources :chrtrules
+
+  resources :preventive_services
+
+  resources :pm_scores
+
+  resources :preventive_service_recommendations
+
+  resources :diabetes_patients
+
+  resources :hes_patients
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

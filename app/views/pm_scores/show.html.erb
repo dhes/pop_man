@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Measure:</strong>
+  <%= @pm_score.measure %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @pm_score.score %>
+</p>
+
+<p>
+  <strong>Score date:</strong>
+  <%= @pm_score.score_date %>
+</p>
+
+<p>
+  <strong>Numer:</strong>
+  <%= @pm_score.numer %>
+</p>
+
+<p>
+  <strong>Denom:</strong>
+  <%= @pm_score.denom %>
+</p>
+
+<%= link_to 'Edit', edit_pm_score_path(@pm_score) %> |
+<%= link_to 'Back', pm_scores_path %>

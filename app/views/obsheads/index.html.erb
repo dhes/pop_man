@@ -1,0 +1,41 @@
+<h1>Listing obsheads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hdid</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Mlcode</th>
+      <th>Cptcode</th>
+      <th>Icdcode</th>
+      <th>Loinccode</th>
+      <th>Snomedcode</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @obsheads.each do |obshead| %>
+      <tr>
+        <td><%= obshead.hdid %></td>
+        <td><%= obshead.name %></td>
+        <td><%= obshead.description %></td>
+        <td><%= obshead.mlcode %></td>
+        <td><%= obshead.cptcode %></td>
+        <td><%= obshead.icdcode %></td>
+        <td><%= obshead.loinccode %></td>
+        <td><%= obshead.snomedcode %></td>
+        <td><%= link_to 'Show', obshead %></td>
+        <td><%= link_to 'Edit', edit_obshead_path(obshead) %></td>
+        <td><%= link_to 'Destroy', obshead, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Obshead', new_obshead_path %>

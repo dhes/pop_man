@@ -1,0 +1,35 @@
+<h1>Listing preventive_service_recommendations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Source</th>
+      <th>In scope?</th>
+      <th>Implemented?</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @preventive_service_recommendations.each do |preventive_service_recommendation| %>
+      <tr>
+        <td><%= preventive_service_recommendation.title %></td>
+        <td><%= preventive_service_recommendation.description %></td>
+        <td><%= preventive_service_recommendation.source %></td>
+        <td><%= preventive_service_recommendation.in_scope? %></td>
+        <td><%= preventive_service_recommendation.implemented? %></td>
+        <td><%= link_to 'Show', preventive_service_recommendation %></td>
+        <td><%= link_to 'Edit', edit_preventive_service_recommendation_path(preventive_service_recommendation) %></td>
+        <td><%= link_to 'Destroy', preventive_service_recommendation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Preventive service recommendation', new_preventive_service_recommendation_path %>

@@ -1,0 +1,21 @@
+<%= form_for(@diabetes_patient) do |f| %>
+  <% if @diabetes_patient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@diabetes_patient.errors.count, "error") %> prohibited this diabetes_patient from being saved:</h2>
+
+      <ul>
+      <% @diabetes_patient.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :oracle_id %><br>
+    <%= f.number_field :oracle_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<%= form_for(@pm_score) do |f| %>
+  <% if @pm_score.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pm_score.errors.count, "error") %> prohibited this pm_score from being saved:</h2>
+
+      <ul>
+      <% @pm_score.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :measure %><br>
+    <%= f.text_field :measure %>
+  </div>
+  <div class="field">
+    <%= f.label :score %><br>
+    <%= f.text_field :score %>
+  </div>
+  <div class="field">
+    <%= f.label :score_date %><br>
+    <%= f.datetime_select :score_date %>
+  </div>
+  <div class="field">
+    <%= f.label :numer %><br>
+    <%= f.number_field :numer %>
+  </div>
+  <div class="field">
+    <%= f.label :denom %><br>
+    <%= f.number_field :denom %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

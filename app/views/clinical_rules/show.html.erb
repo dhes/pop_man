@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @clinical_rule.name %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @clinical_rule.sex %>
+</p>
+
+<p>
+  <strong>Lowage:</strong>
+  <%= @clinical_rule.lowage %>
+</p>
+
+<p>
+  <strong>Highage:</strong>
+  <%= @clinical_rule.highage %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @clinical_rule.problem %>
+</p>
+
+<p>
+  <strong>Medication:</strong>
+  <%= @clinical_rule.medication %>
+</p>
+
+<p>
+  <strong>Allergy:</strong>
+  <%= @clinical_rule.allergy %>
+</p>
+
+<p>
+  <strong>Test:</strong>
+  <%= @clinical_rule.test %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @clinical_rule.comment %>
+</p>
+
+<%= link_to 'Edit', edit_clinical_rule_path(@clinical_rule) %> |
+<%= link_to 'Back', clinical_rules_path %>

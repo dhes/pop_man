@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hdid: 1
+  name: MyString
+  description: MyText
+  mlcode: MyString
+  cptcode: MyString
+  icdcode: MyString
+  loinccode: MyString
+  snomedcode: MyString
+
+two:
+  hdid: 1
+  name: MyString
+  description: MyText
+  mlcode: MyString
+  cptcode: MyString
+  icdcode: MyString
+  loinccode: MyString
+  snomedcode: MyString

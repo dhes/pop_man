@@ -1,0 +1,51 @@
+<%= form_for(@uspstf_rec) do |f| %>
+  <% if @uspstf_rec.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@uspstf_rec.errors.count, "error") %> prohibited this uspstf_rec from being saved:</h2>
+
+      <ul>
+      <% @uspstf_rec.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :topic %><br>
+    <%= f.text_field :topic %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :grade %><br>
+    <%= f.text_field :grade %>
+  </div>
+  <div class="field">
+    <%= f.label :release_date %><br>
+    <%= f.text_field :release_date %>
+  </div>
+  <div class="field">
+    <%= f.label :in_scope do %>
+    <%= f.check_box :in_scope %>
+    In scope
+    <% end %> 
+  </div>
+  <div class="field">
+    <%= f.label :reminder_implemented do %>
+    <%= f.check_box :reminder_implemented %>
+    Reminder implemented
+    <% end %> 
+  </div>
+  <div class="field">
+    <%= f.label :score_implemented do %>
+    <%= f.check_box :score_implemented %>
+    Score implemented
+    <% end %> 
+  </div><br>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

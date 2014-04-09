@@ -1,0 +1,2 @@
+module ChrtrulesHelper
+end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  measure: MyString
+  score: 9.99
+  score_date: 2014-03-18 15:16:54
+  numer: 1
+  denom: 1
+
+two:
+  measure: MyString
+  score: 9.99
+  score_date: 2014-03-18 15:16:54
+  numer: 1
+  denom: 1

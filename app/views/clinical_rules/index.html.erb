@@ -1,0 +1,39 @@
+<h1>Listing clinical_rules</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Lowage</th>
+      <th>Highage</th>
+      <th>Problem</th>
+      <th>Medication</th>
+      <th>Test</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clinical_rules.each do |clinical_rule| %>
+      <tr>
+        <td><%= clinical_rule.name %></td>
+        <td><%= clinical_rule.sex %></td>
+        <td><%= clinical_rule.lowage %></td>
+        <td><%= clinical_rule.highage %></td>
+        <td><%= clinical_rule.problem %></td>
+        <td><%= clinical_rule.medication %></td>
+        <td><%= clinical_rule.test %></td>
+        <td><%= link_to 'Show', clinical_rule %></td>
+        <td><%= link_to 'Edit', edit_clinical_rule_path(clinical_rule) %></td>
+        <td><%= link_to 'Destroy', clinical_rule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Clinical rule', new_clinical_rule_path %>

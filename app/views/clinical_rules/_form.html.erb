@@ -1,0 +1,53 @@
+<%= form_for(@clinical_rule) do |f| %>
+  <% if @clinical_rule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@clinical_rule.errors.count, "error") %> prohibited this clinical_rule from being saved:</h2>
+
+      <ul>
+      <% @clinical_rule.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :sex %><br>
+    <%= f.text_field :sex %>
+  </div>
+  <div class="field">
+    <%= f.label :lowage %><br>
+    <%= f.number_field :lowage %>
+  </div>
+  <div class="field">
+    <%= f.label :highage %><br>
+    <%= f.number_field :highage %>
+  </div>
+  <div class="field">
+    <%= f.label :problem %><br>
+    <%= f.text_field :problem %>
+  </div>
+  <div class="field">
+    <%= f.label :medication %><br>
+    <%= f.text_field :medication %>
+  </div>
+  <div class="field">
+    <%= f.label :allergy %><br>
+    <%= f.text_field :allergy %>
+  </div>
+  <div class="field">
+    <%= f.label :test %><br>
+    <%= f.text_area :test %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

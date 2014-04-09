@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @preventive_service_recommendation.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @preventive_service_recommendation.description %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @preventive_service_recommendation.source %>
+</p>
+
+<p>
+  <strong>In scope?:</strong>
+  <%= @preventive_service_recommendation.in_scope? %>
+</p>
+
+<p>
+  <strong>Implemented?:</strong>
+  <%= @preventive_service_recommendation.implemented? %>
+</p>
+
+<%= link_to 'Edit', edit_preventive_service_recommendation_path(@preventive_service_recommendation) %> |
+<%= link_to 'Back', preventive_service_recommendations_path %>

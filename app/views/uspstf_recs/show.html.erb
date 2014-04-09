@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Topic:</strong>
+  <%= @uspstf_rec.topic %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @uspstf_rec.description %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @uspstf_rec.grade %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @uspstf_rec.release_date %>
+</p>
+
+<p>
+  <strong>In scope?</strong>
+  <%= @uspstf_rec.in_scope %>
+</p>
+
+<p>
+  <strong>Reminder Implemented?</strong>
+  <%= @uspstf_rec.reminder_implemented %>
+</p>
+
+<p>
+  <strong>Score Implemented?</strong>
+  <%= @uspstf_rec.score_implemented %>
+</p>
+
+<%= link_to 'Edit', edit_uspstf_rec_path(@uspstf_rec) %> |
+<%= link_to 'Back', uspstf_recs_path %>

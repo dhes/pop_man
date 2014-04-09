@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hdid:</strong>
+  <%= @obshead.hdid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @obshead.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @obshead.description %>
+</p>
+
+<p>
+  <strong>Mlcode:</strong>
+  <%= @obshead.mlcode %>
+</p>
+
+<p>
+  <strong>Cptcode:</strong>
+  <%= @obshead.cptcode %>
+</p>
+
+<p>
+  <strong>Icdcode:</strong>
+  <%= @obshead.icdcode %>
+</p>
+
+<p>
+  <strong>Loinccode:</strong>
+  <%= @obshead.loinccode %>
+</p>
+
+<p>
+  <strong>Snomedcode:</strong>
+  <%= @obshead.snomedcode %>
+</p>
+
+<%= link_to 'Edit', edit_obshead_path(@obshead) %> |
+<%= link_to 'Back', obsheads_path %>
