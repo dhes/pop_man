@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pid:</strong>
+  <%= @most_recent_observation.pid %>
+</p>
+
+<p>
+  <strong>Hdid:</strong>
+  <%= @most_recent_observation.hdid %>
+</p>
+
+<p>
+  <strong>Obsdate:</strong>
+  <%= @most_recent_observation.obsdate %>
+</p>
+
+<p>
+  <strong>Obsvalue:</strong>
+  <%= @most_recent_observation.obsvalue %>
+</p>
+
+<%= link_to 'Edit', edit_most_recent_observation_path(@most_recent_observation) %> |
+<%= link_to 'Back', most_recent_observations_path %>

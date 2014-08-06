@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pid: 1
+  searchname: MyString
+  age_months: 1
+  sex: MyString
+  last_seen: MyString
+
+two:
+  pid: 1
+  searchname: MyString
+  age_months: 1
+  sex: MyString
+  last_seen: MyString

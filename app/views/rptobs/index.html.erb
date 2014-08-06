@@ -1,0 +1,35 @@
+<h1>Listing rptobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pid</th>
+      <th>Hdid</th>
+      <th>Obsdate</th>
+      <th>Obsvalue</th>
+      <th>Change</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rptobs.each do |rptob| %>
+      <tr>
+        <td><%= rptob.pid %></td>
+        <td><%= rptob.hdid %></td>
+        <td><%= rptob.obsdate %></td>
+        <td><%= rptob.obsvalue %></td>
+        <td><%= rptob.change %></td>
+        <td><%= link_to 'Show', rptob %></td>
+        <td><%#= link_to 'Edit', edit_rptob_path(rptob) %></td>
+        <td><%#= link_to 'Destroy', rptob, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%#= link_to 'New Rptob', new_rptob_path %>

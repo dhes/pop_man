@@ -1,0 +1,61 @@
+<%= form_for(@protocol) do |f| %>
+  <% if @protocol.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@protocol.errors.count, "error") %> prohibited this protocol from being saved:</h2>
+
+      <ul>
+      <% @protocol.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :sex %><br>
+    <%= f.text_field :sex %>
+  </div>
+  <div class="field">
+    <%= f.label :lowage %><br>
+    <%= f.number_field :lowage %>
+  </div>
+  <div class="field">
+    <%= f.label :highage %><br>
+    <%= f.number_field :highage %>
+  </div>
+  <div class="field">
+    <%= f.label :problems %><br>
+    <%= f.text_area :problems %>
+  </div>
+  <div class="field">
+    <%= f.label :medications %><br>
+    <%= f.text_area :medications %>
+  </div>
+  <div class="field">
+    <%= f.label :tests %><br>
+    <%= f.text_area :tests %>
+  </div>
+  <div class="field">
+    <%= f.label :fact %><br>
+    <%= f.text_area :fact %>
+  </div>
+  <div class="field">
+    <%= f.label :numer %><br>
+    <%= f.text_area :numer %>
+  </div>
+  <div class="field">
+    <%= f.label :denom %><br>
+    <%= f.text_area :denom %>
+  </div>
+  <div class="field">
+    <%= f.label :score %><br>
+    <%= f.text_area :score %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

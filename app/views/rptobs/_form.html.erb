@@ -1,0 +1,40 @@
+#you want these fields
+#PID, CHANGE, hdid, abnormal, obsdate, obstype, obsvalue, description
+#...so add abnormal, obstype and description
+<%= form_for(@rptob) do |f| %>
+  <% if @rptob.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rptob.errors.count, "error") %> prohibited this rptob from being saved:</h2>
+
+      <ul>
+      <% @rptob.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pid %><br>
+    <%= f.text_field :pid %>
+  </div>
+  <div class="field">
+    <%= f.label :hdid %><br>
+    <%= f.text_field :hdid %>
+  </div>
+  <div class="field">
+    <%= f.label :obsdate %><br>
+    <%= f.text_field :obsdate %>
+  </div>
+  <div class="field">
+    <%= f.label :obsvalue %><br>
+    <%= f.text_field :obsvalue %>
+  </div>
+  <div class="field">
+    <%= f.label :change %><br>
+    <%= f.text_field :change %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

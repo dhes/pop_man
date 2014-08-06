@@ -1,0 +1,33 @@
+<h1>Listing most_recent_observations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pid</th>
+      <th>Hdid</th>
+      <th>Obsdate</th>
+      <th>Obsvalue</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @most_recent_observations.each do |most_recent_observation| %>
+      <tr>
+        <td><%= most_recent_observation.pid %></td>
+        <td><%= most_recent_observation.hdid %></td>
+        <td><%= most_recent_observation.obsdate %></td>
+        <td><%= most_recent_observation.obsvalue %></td>
+        <td><%#= link_to 'Show', most_recent_observation %></td>
+        <td><%#= link_to 'Edit', edit_most_recent_observation_path(most_recent_observation) %></td>
+        <td><%#= link_to 'Destroy', most_recent_observation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%#= link_to 'New Most recent observation', new_most_recent_observation_path %>

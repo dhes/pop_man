@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sex: MyString
+  lowage: 1
+  highage: 1
+  problems: MyText
+  medications: MyText
+  tests: MyText
+  fact: MyText
+
+two:
+  name: MyString
+  sex: MyString
+  lowage: 1
+  highage: 1
+  problems: MyText
+  medications: MyText
+  tests: MyText
+  fact: MyText

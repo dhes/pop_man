@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pid: MyString
+  hdid: MyString
+  obsdate: MyString
+  obsvalue: MyString
+  change: MyString
+
+two:
+  pid: MyString
+  hdid: MyString
+  obsdate: MyString
+  obsvalue: MyString
+  change: MyString

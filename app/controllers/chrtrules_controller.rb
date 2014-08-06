@@ -6,7 +6,8 @@ class ChrtrulesController < ApplicationController
 
   def index
     #expanded_observations_as_description = expanded_observations_as_hdid.map{|w| [w[0], Obshead.find(w[1]).description]}.sort
-    @chrtrules = Chrtrule.names_and_expanded_observations
+#    @chrtrules = Chrtrule.names_and_expanded_observations
+    @chrtrules = Chrtrule.all.sort
   end
 
   # GET /chrtrules/1

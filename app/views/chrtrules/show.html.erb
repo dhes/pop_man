@@ -6,9 +6,39 @@
 </p>
 
 <p>
-  <strong>Rulecomment:</strong>
+  <strong>Gender:</strong>
   <%= @chrtrule.rulecomment %>
 </p>
 
-<%= link_to 'Edit', edit_chrtrule_path(@chrtrule) %> |
+<p>
+  <strong>Lowage:</strong>
+  <%= @chrtrule.lowage.to_i/12 %>
+</p>
+
+<p>
+  <strong>Highage:</strong>
+  <%= @chrtrule.highage.to_i/12 %>
+</p>
+
+<p>
+  <strong>Problems:</strong>
+  <%= @chrtrule.problems %>
+</p>
+
+<p>
+  <strong>Medications:</strong>
+  <%= @chrtrule.medications %>
+</p>
+
+<p>
+  <strong>Observations:</strong>
+  <%= @chrtrule.tests %>
+</p>
+
+<p>
+  <strong>Fact:</strong>
+  <%= @chrtrule.fact %>
+</p>
+
+<%#= link_to 'Edit', edit_chrtrule_path(@chrtrule) %> |
 <%= link_to 'Back', chrtrules_path %>

@@ -1,0 +1,41 @@
+<%= form_for(@prblook) do |f| %>
+  <% if @prblook.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@prblook.errors.count, "error") %> prohibited this prblook from being saved:</h2>
+
+      <ul>
+      <% @prblook.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :longdescr %><br>
+    <%= f.text_area :longdescr %>
+  </div>
+  <div class="field">
+    <%= f.label :mlcode %><br>
+    <%= f.text_field :mlcode %>
+  </div>
+  <div class="field">
+    <%= f.label :keyword %><br>
+    <%= f.text_area :keyword %>
+  </div>
+  <div class="field">
+    <%= f.label :codetype %><br>
+    <%= f.number_field :codetype %>
+  </div>
+  <div class="field">
+    <%= f.label :standard %><br>
+    <%= f.number_field :standard %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pid:</strong>
+  <%= @dhes_patient.pid %>
+</p>
+
+<p>
+  <strong>Searchname:</strong>
+  <%= @dhes_patient.searchname %>
+</p>
+
+<p>
+  <strong>Age months:</strong>
+  <%= @dhes_patient.age_months %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @dhes_patient.sex %>
+</p>
+
+<p>
+  <strong>Last seen:</strong>
+  <%= @dhes_patient.last_seen %>
+</p>
+
+<%= link_to 'Edit', edit_dhes_patient_path(@dhes_patient) %> |
+<%= link_to 'Back', dhes_patients_path %>

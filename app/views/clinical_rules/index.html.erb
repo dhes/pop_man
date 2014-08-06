@@ -1,5 +1,8 @@
 <h1>Listing clinical_rules</h1>
 
+<p>
+This set contains <%= @clinical_rules.length %> clinical rules. 
+</p>
 <table>
   <thead>
     <tr>
@@ -26,9 +29,9 @@
         <td><%= clinical_rule.problem %></td>
         <td><%= clinical_rule.medication %></td>
         <td><%= clinical_rule.test %></td>
-        <td><%= link_to 'Show', clinical_rule %></td>
-        <td><%= link_to 'Edit', edit_clinical_rule_path(clinical_rule) %></td>
-        <td><%= link_to 'Destroy', clinical_rule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= link_to 'Show', clinical_rule %></td>
+        <td><%#= link_to 'Edit', edit_clinical_rule_path(clinical_rule) %></td>
+        <td><%#= link_to 'Destroy', clinical_rule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +39,4 @@
 
 <br>
 
-<%= link_to 'New Clinical rule', new_clinical_rule_path %>
+<%#= link_to 'New Clinical rule', new_clinical_rule_path %>

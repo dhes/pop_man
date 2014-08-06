@@ -1,0 +1,37 @@
+<h1>Listing prblooks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Longdescr</th>
+      <th>Mlcode</th>
+      <th>Keyword</th>
+      <th>Codetype</th>
+      <th>Standard</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prblooks.each do |prblook| %>
+      <tr>
+        <td><%= prblook.description %></td>
+        <td><%= prblook.longdescr %></td>
+        <td><%= prblook.mlcode %></td>
+        <td><%= prblook.keyword %></td>
+        <td><%= prblook.codetype %></td>
+        <td><%= prblook.standard %></td>
+        <td><%#= link_to 'Show', prblook %></td>
+        <td><%#= link_to 'Edit', edit_prblook_path(prblook) %></td>
+        <td><%#= link_to 'Destroy', prblook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%#= link_to 'New Prblook', new_prblook_path %>

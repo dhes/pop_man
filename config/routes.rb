@@ -1,4 +1,23 @@
 PopMan::Application.routes.draw do
+  
+  get 'people/aspirin_contraindicated' => 'people#aspirin_contraindicated'
+
+  get 'problems/strokes' => 'problems#strokes'
+
+  resources :rptobs
+
+  resources :people
+
+  resources :most_recent_observations
+
+  resources :problems
+
+  resources :prblooks
+
+  resources :dhes_patients
+
+  resources :protocols
+
   resources :uspstf_recs
 
   resources :clinical_rules
@@ -11,11 +30,7 @@ PopMan::Application.routes.draw do
 
   resources :pm_scores
 
-  resources :preventive_service_recommendations
-
   resources :diabetes_patients
-
-  resources :hes_patients
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

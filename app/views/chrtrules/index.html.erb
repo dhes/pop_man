@@ -1,26 +1,51 @@
 <h1>EMR Reminders</h1>
 
+<p>
+  You have <%= @chrtrules.count %> chart rules. 
+</p>
+
 <table class="table table-striped table-bordered table-condensed">
   <thead>
     <tr>
+      <th></th>
+      <th></th>
       <th>Name</th>
-      <th>Comment</th>
+      <th>Gender</th>
+      <th>Lowage</th>
+      <th>Highage</th>
+      <th></th>
+      <th>Problems</th>
+      <th>Medications</th>
+      <th></th>
+      <th></th>
+      <th>Observations</th>
       <th></th>
       <th></th>
       <th></th>
+      <th>Fact</th>
     </tr>
   </thead>
 
   <tbody>
     <% @chrtrules.each do |chrtrule| %>
       <tr>
-        <td><%#= chrtrule.name %></td>
+        <td><%#= chrtrule.ruleid %></td>
+        <td><%#= chrtrule.groupid %></td>
+        <td><%= chrtrule.name %></td>
+        <td><%= chrtrule.sex %></td>
+        <td><%= chrtrule.lowage.to_i/12 %></td>
+        <td><%= chrtrule.highage.to_i/12 %></td>
+        <td><%#= chrtrule.keyword %></td>
+        <td><%= chrtrule.problems %></td>
+        <td><%= chrtrule.medications %></td>
+        <td><%#= chrtrule.allergies %></td>
+        <td><%#= chrtrule.actions %></td>
+        <td><%= chrtrule.tests %></td>
+        <td><%#= chrtrule.interventions %></td>
         <td><%#= chrtrule.rulecomment %></td>
-        <td><%= chrtrule[0] %></td>
-        <td><%= chrtrule[1] %></td>
-        <td><%#= link_to 'Show', chrtrule %></td>
-        <td><%#= link_to 'Edit', edit_chrtrule_path(chrtrule) %></td>
-        <td><%#= link_to 'Destroy', chrtrule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= chrtrule.rulever %></td>
+        <td><%= chrtrule.fact %></td>
+        <td><%= link_to 'Show', chrtrule %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +53,4 @@
 
 <br>
 
-<%= link_to 'New Chrtrule', new_chrtrule_path %>
+<%#= link_to 'New Chrtrule', new_chrtrule_path %>

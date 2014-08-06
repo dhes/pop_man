@@ -14,9 +14,9 @@
     <% @diabetes_patients.each do |diabetes_patient| %>
       <tr>
         <td><%= diabetes_patient.oracle_id %></td>
-        <td><%= link_to 'Show', diabetes_patient %></td>
-        <td><%= link_to 'Edit', edit_diabetes_patient_path(diabetes_patient) %></td>
-        <td><%= link_to 'Destroy', diabetes_patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= link_to 'Show', diabetes_patient %></td>
+        <td><%#= link_to 'Edit', edit_diabetes_patient_path(diabetes_patient) %></td>
+        <td><%#= link_to 'Destroy', diabetes_patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

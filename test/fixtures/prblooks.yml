@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  longdescr: MyText
+  mlcode: MyString
+  keyword: MyText
+  codetype: 1
+  standard: 1
+
+two:
+  description: MyString
+  longdescr: MyText
+  mlcode: MyString
+  keyword: MyText
+  codetype: 1
+  standard: 1

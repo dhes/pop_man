@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pid: 1
+  hdid: 1
+  obsdate: 2014-04-20
+  obsvalue: MyText
+
+two:
+  pid: 1
+  hdid: 1
+  obsdate: 2014-04-20
+  obsvalue: MyText
